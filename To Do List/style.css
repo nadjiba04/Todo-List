@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    position: relative;
+    font-size: 50px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-family: "Shrikhand", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1 i {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+h1:before,
+h1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\0';
+    background-color: white;
+}
+
+h1:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+#todo-form button {
+    background: rgb(95, 94, 94);
+    color: white;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(112, 112, 112);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: rgb(89, 89, 89);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li p {
+    color: whitesmoke;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.card {
+    width: 200% !important;
+    height: 700px;
+    background-color: rgb(38, 38, 38);
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
